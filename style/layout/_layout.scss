@@ -1,0 +1,323 @@
+html,
+body {
+    min-height: 100vh;
+}
+
+body {
+
+    @include main_font_medium;
+    font-size: 1.6rem;
+
+    color: $bodyColor;
+    background-color: $bodyBackground;
+
+    strong {
+        @include main_font_bold;
+    }
+
+    //mediaquery
+    @include big_device {}
+
+    @include small_device {}
+}
+
+.page {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    &__container {
+
+        width: 100%;
+        max-width: 76.6rem;
+
+        margin: 0 auto;
+
+        @include big_device {
+            padding: 0 1.5rem;
+        }
+
+    }
+
+    .component {
+
+        background-color: #fff;
+
+        @include big_device {
+            display: flex;
+            border-radius: 3.2rem;
+        }
+
+        &__res {
+
+            background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+            text-align: center;
+
+            @include big_device {
+                flex: 0 0 50%;
+                border-radius: 3.2rem;
+                padding: 3.8rem 5.4rem 4.6rem;
+            }
+
+            @include small_device {
+                border-radius: 0 0 3.2rem 3.2rem;
+                padding: 2.4rem 5.8rem 4rem;
+            }
+
+            .title {
+                @include main_font_bold;
+
+                color: #CAC9FF;
+
+                @include big_device {
+                    font-size: 2.4rem;
+                    line-height: 3.127rem;
+                }
+
+                @include small_device {
+                    font-size: 1.8rem;
+                    line-height: 2.3rem;
+                }
+            }
+
+            .circle {
+
+
+
+                border-radius: 50%;
+                background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+
+                @include big_device {
+                    width: 20rem;
+                    height: 20rem;
+                    margin: 3.5rem auto 0;
+                }
+
+                @include small_device {
+                    width: 14rem;
+                    height: 14rem;
+                    margin: 2.4rem auto 0;
+                }
+
+                &__bigNum {
+                    @include main_font_extrabold;
+
+                    color: white;
+
+                    line-height: 7.2rem;
+
+                    @include big_device {
+                        font-size: 7.2rem;
+                        padding-top: 5.5rem;
+                    }
+
+                    @include small_device {
+                        font-size: 5.6rem;
+                        padding-top: 2.5rem;
+                    }
+                }
+
+                &__smallNum {
+
+                    color: #CAC9FF;
+                    opacity: .52;
+
+                    @include big_device {
+                        font-size: 1.8rem;
+                        line-height: 2.3rem;
+                        margin-top: 0.4rem;
+                    }
+
+                    @include small_device {
+                        font-size: 1.6rem;
+                        line-height: 2.1rem;
+                    }
+                }
+
+            }
+
+            .subTitle {
+
+                color: white;
+
+
+                @include big_device {
+                    font-size: 3.2rem;
+                    line-height: 4.17rem;
+                    margin-top: 2.8rem;
+                }
+
+                @include small_device {
+                    font-size: 2.4rem;
+                    line-height: 3.1rem;
+                    margin-top: 2.4rem;
+                }
+            }
+
+            .desc {
+
+                color: #CAC9FF;
+
+
+                @include big_device {
+                    font-size: 1.8rem;
+                    line-height: 2.345rem;
+                    margin-top: 1.4rem;
+                }
+
+                @include small_device {
+                    font-size: 1.6rem;
+                    line-height: 2.1rem;
+                    margin-top: .8rem;
+                }
+            }
+
+        }
+
+        &__sum {
+
+            @include big_device {
+                flex: 0 0 50%;
+                border-radius: 0 3.2rem 3.2rem 0;
+                padding: 3.8rem 4rem 4.6rem;
+            }
+
+            @include small_device {
+                padding: 2.4rem 3rem 3rem;
+            }
+
+
+
+            .title {
+
+                @include main_font_bold;
+                color: #303B59;
+
+                @include big_device {
+                    font-size: 2.4rem;
+                    line-height: 3.127rem;
+                }
+
+                @include small_device {
+                    font-size: 1.8rem;
+                    line-height: 2.3rem;
+                }
+            }
+
+            .table {
+
+
+                @include big_device {
+                    margin-top: 2.8rem;
+                }
+
+                @include small_device {
+                    margin-top: 2.4rem;
+                }
+
+                &__row {
+
+                    height: 5.6rem;
+                    padding: 0 1.6rem;
+                    border-radius: 1.2rem;
+
+                    display: flex;
+                    align-items: center;
+
+                    @include big_device {
+                        font-size: 1.8rem;
+                        line-height: 2.3rem;
+                    }
+
+                    @include small_device {
+                        font-size: 1.6rem;
+                        line-height: 2.1rem;
+                    }
+
+                    &:not(:first-child) {
+                        margin-top: 1.6rem;
+                    }
+
+                    &--reaction {
+                        color: #FF5555;
+                        background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
+                    }
+
+                    &--memory {
+                        color: #FFB21E;
+                        background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FFB21E;
+                    }
+
+                    &--verbal {
+                        color: #00BB8F;
+                        background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #00BB8F;
+                    }
+
+                    &--visual {
+                        color: #1125D6;
+                        background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #1125D6;
+                    }
+
+                    .icon {
+                        flex: 0 0 20px;
+
+                        img {
+                            @include img_responsive;
+                        }
+                    }
+
+                    .category {
+                        @include main_font_medium;
+                        margin-left: 1.2rem;
+                    }
+
+                    .score {
+
+                        @include main_font_bold;
+                        color: #303B59;
+                        display: flex;
+                        margin-left: auto;
+
+                        &__left {}
+
+                        &__right {
+                            opacity: .5;
+                            margin-left: 0.8rem;
+                        }
+                    }
+
+                }
+            }
+
+            .cta {
+                @include main_font_bold;
+                width: 100%;
+                font-size: 1.8rem;
+                height: 5.6rem;
+                line-height: 5.6rem;
+                color: white;
+                background-color: #303B59;
+                border-radius: 2.8rem;
+                transition: all .3s;
+                border: 0;
+                cursor: pointer;
+
+                @include big_device {
+                    margin-top: 4.1rem;
+                }
+
+                @include small_device {
+                    margin-top: 2.4rem;
+                }
+
+                &:hover {
+                    background-color: #4535F1;
+                }
+            }
+        }
+
+    }
+
+}
