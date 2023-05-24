@@ -14,7 +14,6 @@ This is a solution to the [Results summary component challenge on Frontend Mento
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -31,8 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://antoru-results-summary-component.netlify.app/](https://antoru-results-summary-component.netlify.app/)
 
 ## My process
 
@@ -43,6 +41,13 @@ Users should be able to:
 - Flexbox
 - [Sass](https://sass-lang.com/) - For styles
 - [Bem](https://en.bem.info/) - For classes's naming
+- Vanilla Js
+
+### Deploying the project
+
+Project hosted for free, thanks to:
+
+- [Netlify](https://www.netlify.com/)
 
 ### Useful resources
 
